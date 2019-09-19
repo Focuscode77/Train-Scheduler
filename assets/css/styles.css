@@ -6,3 +6,50 @@ background-color: aquamarine;
 
 
 }
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 14px;
+}
+
+body {
+    box-sizing: border-box;
+    padding: 0 3rem;
+     font-size: 1.6rem; 
+}
+
+.header {
+    height: 30vh;
+
+    background-color: rgb(30, 68, 173);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border-bottom: 1rem solid black;
+    margin-bottom: 2rem;
+}
+
+.header__text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+     transform: translate(-50%, -50%); 
+    text-align: center;
+}
+
+.content {
+    max-width: 90rem;
+    margin: 0 auto;
+}
+
+.primary-border {
+    border: .2rem solid black;
+    padding: 2rem;
+}
