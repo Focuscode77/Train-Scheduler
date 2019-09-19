@@ -7,11 +7,17 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- CSS Link -->
     <link rel="stylesheet" href="assets/css/styles.css">
+   
     <!-- Bootstap Link -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Train Scheduler</title>
-
+   
+    <!-- Firebase References -->
+  <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
+ <!-- jQuery -->
+ <script src="https://code.jquery.com/jquery.js"></script>
 </head>
 
 <body>
@@ -97,24 +103,24 @@
     <form>
 
         <div class="form-group">
-            <label for="exampleInputEmail1">Train Name</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <label >Train Name</label>
+            <input type="name" class="form-control" id="New-Train" aria-describedby="emailHelp">
         </div>
         <div class="form-group">
-            <label for="exampleInputPassword1">Destination</label>
-            <input type="password" class="form-control" id="exampleInputPassword1">
+            <label >Destination</label>
+            <input type="name" class="form-control" id="Destination">
         </div>
         <div class="form-group">
-                <label for="exampleInputPassword1">First Train Time(HH:mm-military time)</label>
-                <input type="password" class="form-control" id="exampleInputPassword1">
+                <label>First Train Time(HH:mm-military time)</label>
+                <input type="number" class="form-control" id="First-tt">
             </div>
             <div class="form-group">
-                    <label for="exampleInputPassword1">Frequency (min)</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1">
+                    <label >Frequency (min)</label>
+                    <input type="number" class="form-control" id="Frequency">
                 </div>
                    
        
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-primary"id="add-user">Submit</button>
     </form>
 
 
